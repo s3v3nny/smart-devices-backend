@@ -18,7 +18,9 @@ public class UpdateIndicators {
     @SneakyThrows
     @Consumes(MediaType.APPLICATION_JSON)
     public Response updateIndicators(String body) {
+        System.out.println("ДО ВЫВОДА ПОКАЗАТЕЛЕЙ");
         System.out.println(body);
+        System.out.println("ПОСЛЕ ВЫВОДА ПОКАЗАТЕЛЕЙ");
         service.updateIndicators(body);
 
         return Response
