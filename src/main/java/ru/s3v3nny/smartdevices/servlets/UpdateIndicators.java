@@ -18,6 +18,7 @@ public class UpdateIndicators {
     @SneakyThrows
     @Consumes(MediaType.APPLICATION_JSON)
     public Response updateIndicators(String body) {
+        System.out.println(body);
         service.updateIndicators(body);
 
         return Response
