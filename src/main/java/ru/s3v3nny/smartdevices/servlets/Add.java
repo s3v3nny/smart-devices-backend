@@ -18,6 +18,7 @@ public class Add {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response addUser(String body) {
         System.out.println(body);
+        //
         service.addUser(body);
 
         return Response
